@@ -1,4 +1,4 @@
-// 数据使用ACMI格式化导出
+// 数据使用http://ai.uremy.world格式化导出
 // 出处 https://github.com/zcyzcy88/TagTable
 
 #图片属性
