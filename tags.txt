@@ -11,6 +11,7 @@ animated_gif, gif格式图片
 parody, 拙劣的模仿
 lowres, 低分辨率
 
+
 #图片风格
 artbook, 原画
 game_cg, 游戏CG
@@ -89,18 +90,19 @@ full body, 全身
 out of frame, 人物超出框
 head out of frame, 头超出框
 feet out of frame, 足超出框
+full body, 全身
 upper body, 上半身
 lower body, 下半身
 cropped torso upper body, 躯干下剪裁
-cropped shoulders, 肩下剪裁
+cropped shoulders  , 肩下剪裁
 cropped arms, 手臂下剪裁
-cropped legs, 腿下剪裁
+cropped legs  , 腿下剪裁
 cowboy shot, 牛仔特写
 portrait, 人像
 close-up, 特写
 cut-in, 插入画面
 selfiemirror, 自拍
-dakimakura, (medium), 抱枕
+dakimakura (medium), 抱枕
 expressions, 表情表
 back, 背影像
 bust, 半身像
@@ -399,61 +401,6 @@ striped, 横条花纹的
 polka_dot, 点装花纹的
 frills, 皱边的
 
-#头饰
-horns, 兽角
-halo, 头顶光环
-tokin_hat, 东金帽子
-mini_top_hat, 迷你礼帽
-beret, 贝雷帽
-hood, 兜帽
-nurse_cap, 护士帽
-tiara, 三重冕
-crown, 皇冠
-hairband, 发卡
-hairclip, 发夹
-hair_ribbon, 发带
-hair_flower, 发花
-hair_ornament, 头饰
-bowtie, 蝴蝶结
-hair_bow, 蝴蝶结发饰
-maid_headdress, 女仆头饰
-bow, 服装饰品/头部饰品
-
-#装饰类物品
-lace, 花边
-ribbon, 丝带
-bandage, 绷带
-glasses, 眼镜
-sunglasses, 太阳镜
-goggles, 风镜
-blindfold, 眼罩
-eyepatch, 眼罩(独眼)
-mask, 面具/眼罩/口罩
-earrings, 耳环
-jewelry, 首饰
-collar, 项圈
-bell, 铃铛
-choker, 颈部饰品
-sailor_collar, 水手领
-ribbon_choker, 颈带
-necklace, 项链
-scarf, 围巾
-necktie, 领带
-tie, 领带
-armband, 臂章
-armlet, 臂环
-wristband, 腕带
-chains, 锁链
-wrist_cuffs, 腕饰
-gloves, 手套
-elbow_gloves, 长袖手套
-fingerless_gloves, 露指手套
-cuffs, 手链/手铐
-shackles, 手链/手铐
-handcuffs, 手铐
-bracelet, 手镯
-cane, 手杖
-
 #服装
 torn_clothes, 破烂衣服
 see-through, 透明装
@@ -524,6 +471,61 @@ fundoshi, 日式丁字裤
 condom, 套套
 butt_plug, 添加的尾巴
 diaper, 尿布
+
+#头饰
+horns, 兽角
+halo, 头顶光环
+tokin_hat, 东金帽子
+mini_top_hat, 迷你礼帽
+beret, 贝雷帽
+hood, 兜帽
+nurse_cap, 护士帽
+tiara, 三重冕
+crown, 皇冠
+hairband, 发卡
+hairclip, 发夹
+hair_ribbon, 发带
+hair_flower, 发花
+hair_ornament, 头饰
+bowtie, 蝴蝶结
+hair_bow, 蝴蝶结发饰
+maid_headdress, 女仆头饰
+bow, 服装饰品/头部饰品
+
+#装饰
+lace, 花边
+ribbon, 丝带
+bandage, 绷带
+glasses, 眼镜
+sunglasses, 太阳镜
+goggles, 风镜
+blindfold, 眼罩
+eyepatch, 眼罩(独眼)
+mask, 面具/眼罩/口罩
+earrings, 耳环
+jewelry, 首饰
+collar, 项圈
+bell, 铃铛
+choker, 颈部饰品
+sailor_collar, 水手领
+ribbon_choker, 颈带
+necklace, 项链
+scarf, 围巾
+necktie, 领带
+tie, 领带
+armband, 臂章
+armlet, 臂环
+wristband, 腕带
+chains, 锁链
+wrist_cuffs, 腕饰
+gloves, 手套
+elbow_gloves, 长袖手套
+fingerless_gloves, 露指手套
+cuffs, 手链/手铐
+shackles, 手链/手铐
+handcuffs, 手铐
+bracelet, 手镯
+cane, 手杖
 
 #鞋袜
 garter_straps, 袜带
