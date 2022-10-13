@@ -1,0 +1,7 @@
+
+const LSKEYS = {
+    __LSKEY_PROMPT_SOURCE_STR__: "__LSKEY_PROMPT_SOURCE_STR__",
+    __LSKEY_PROMPT_SELECTED__: "__LSKEY_PROMPT_SELECTED__",
+};
+
+export default LSKEYS;
