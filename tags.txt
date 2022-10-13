@@ -1,12 +1,21 @@
 // 数据使用http://ai.uremy.world格式化导出
 // 出处 https://github.com/zcyzcy88/TagTable
+// 视角与画面部分整合自https://aitag.top/
 
-#图片属性
+#图片质量
+highres, 高分辨率
+absurdres, 超高分辨率
+incredibly_absurdres, 极高分辨率
+huge_filesize, 超级高分辨率/大文件
+animated_gif, gif格式图片
+parody, 拙劣的模仿
+lowres, 低分辨率
+
+#图片风格
 artbook, 原画
 game_cg, 游戏CG
 comic, 漫画
 4koma, 四格
-animated_gif, gif格式图片
 dakimakura, 抱枕
 cosplay, 角色扮演
 crossover, 穿越
@@ -17,19 +26,9 @@ guro, 猎奇
 realistic, 写实
 photo, 照片
 real, 真实
-landscape, 风景
-scenery, 风景
-cityscape, 城市风景
-science_fiction, 科技幻想
 original, 原创
-parody, 拙劣的模仿
 personification, 拟人
 checkered, 格子的
-lowres, 低分辨率
-highres, 高分辨率
-absurdres, 超高分辨率
-incredibly_absurdres, 极高分辨率
-huge_filesize, 超级高分辨率/大文件
 wallpaper, 壁纸
 pixel_art, 点阵图
 monochrome, 单色图片
@@ -43,8 +42,6 @@ silhouette, 剪影
 covr, 封面
 album, 专辑
 sample, 图上有sample字样
-back, 背影像
-bust, 半身像
 profile, 侧面绘
 expressions, 表情绘（各种表情）
 everyone, 一部作品中的主要人物集齐
@@ -63,7 +60,63 @@ tagme, 图片有一些上传者未知的项目
 artist_request, 作者未知, 需要补完
 what, 不知所谓
 
+#视角
+from behind, 背后视角
+from below, 低位视角
+from above, 高位视角
+from side, 侧边视角
+solo focus, 单人焦点
+blurry background, 多人背景
+back focus, 背后焦点
+ass focus, pp焦点
+hip focus, 臀部焦点
+foot focus, 足部焦点
+facing away, 人物面朝远方(背对)
+profile, 侧脸
+straight-on, 正面面对
+first-person view, 第一人称
+pov, 主观视角
+pov hands, 手主观视角
+pov crotch, 胯部主观视角
+three sided view, 三视图
+concept art, 三视图进阶
+reference sheet, 三视图进阶
+official art, 三视图进阶
+multiple views, 多视图
+
+#画面
+full body, 全身
+out of frame, 人物超出框
+head out of frame, 头超出框
+feet out of frame, 足超出框
+upper body, 上半身
+lower body, 下半身
+cropped torso upper body, 躯干下剪裁
+cropped shoulders, 肩下剪裁
+cropped arms, 手臂下剪裁
+cropped legs, 腿下剪裁
+cowboy shot, 牛仔特写
+portrait, 人像
+close-up, 特写
+cut-in, 插入画面
+selfiemirror, 自拍
+dakimakura, (medium), 抱枕
+expressions, 表情表
+back, 背影像
+bust, 半身像
+
 #人物类型
+trap, 伪娘
+crossdressing, 伪娘
+milf, 熟女
+shota, 正太
+loli, 萝莉
+yuri, 百合
+yaoi, 搞基
+harem, 后宫
+no_humans, 非人
+sisters, 姐妹
+siblings, 兄弟姐妹
 Witch, 女巫
 miko, 巫女
 maid, 女仆
@@ -84,44 +137,25 @@ magical_girl, 魔法少女
 multiple_girls, 魔幻少女(指有魔力的)
 furry, 兽人/半兽人
 orc, 兽人/半兽人
-male, 男人
-female, 女人
 giantess, 女巨人
 minigirl, 迷你女孩
 kemonomimi_mode, 兽耳萝莉模式
 chibi, Q版人物
-trap, 伪娘
-crossdressing, 伪娘
-milf, 熟女
-shota, 正太
-loli, 萝莉
-yuri, 百合
-yaoi, 搞基
-harem, 后宫
-no_humans, 非人
+
+#人物数量/性别
 solo, 单人
-sisters, 姐妹
-siblings, 兄弟姐妹
 1girl, 1个女人
 2girls, 2个女人
 1boy, 1个男人
 2boys, 2个男人
+male, 男人
+female, 女人
 
 #人物表情
 makeup, 浓装
 food_on_face, 食物在脸上
-eyes_closed, 闭眼
-wink, 眨眼
-blinking, 眨眼
-wince, 闭一只眼
-slit_pupils, 竖的瞳孔/猫眼
-heterochromia, 异色瞳
-heart-shaped_pupils, 爱心形瞳孔
 eyelid_pull, 拉眼皮吐舌鬼脸
-aqua_eyes, 水汪汪的眼睛
-tsurime, 吊眼角
 eyeball, 盯着看
-tears, 眼泪
 smelling, 闻
 nosebleed, 鼻血
 lips, 嘴唇
@@ -151,7 +185,7 @@ naughty_face, 下流的表情
 endured_face, 忍耐的表情
 looking_at_viewer, 看着你
 
-#人物形态
+#发型
 ahoge, 呆毛
 bangs, 刘海
 blunt_bangs, 齐刘海
@@ -169,33 +203,47 @@ braid, 辫子
 twin_braids, 双辫子
 payot, 长鬓角
 wavy_hair, 波浪发型
-blonde_hair, 金发/金眼
-yellow_eyes, 金发/金眼
-silver_hair, 银发/银眼
-silver_eyes, 银发/银眼
-grey_hair, 灰发/灰眼
-grey_eyes, 灰发/灰眼
-white_hair, 白发/白眼
-white_eyes, 白发/白眼
-brown_hair, 棕发/棕眼
-brown_eyes, 棕发/棕眼
-black_hair, 黑发/黑眼
-black_eyes, 黑发/黑眼
-purple_hair, 紫发/紫眼
-purple_eyes, 紫发/紫眼
-red_hair, 红发/红眼
-red_eyes, 红发/红眼
-blue_hair, 蓝发/蓝眼
-blue_eyes, 蓝发/蓝眼
-green_hair, 绿发/绿眼
-green_eyes, 绿发/绿眼
 short_hair, 短发
 long_hair, 长发
 very_long_hair, 很长的头发
-no_nose, 没鼻子的
-fangs, 尖牙
-tongue, 舌头
-saliva, 唾液
+
+#瞳色
+purple_eyes, 紫眼
+brown_eyes, 棕眼
+yellow_eyes, 金眼
+silver_eyes, 银眼
+grey_eyes, 灰眼
+white_eyes, 白眼
+black_eyes, 黑眼
+red_eyes, 红眼
+blue_eyes, 蓝眼
+green_eyes, 绿眼
+
+#发色
+blonde_hair, 金发
+silver_hair, 银发
+grey_hair, 灰发
+white_hair, 白发
+brown_hair, 棕发
+black_hair, 黑发
+purple_hair, 紫发
+red_hair, 红发
+blue_hair, 蓝发
+green_hair, 绿发
+
+#眼睛
+eyes_closed, 闭眼
+wink, 眨眼
+blinking, 眨眼
+wince, 闭一只眼
+slit_pupils, 竖的瞳孔/猫眼
+heterochromia, 异色瞳
+heart-shaped_pupils, 爱心形瞳孔
+aqua_eyes, 水汪汪的眼睛
+tsurime, 吊眼角
+tears, 眼泪
+
+#耳朵
 animal_ears, 动物耳朵
 fox_ears, 狐狸耳朵
 bunny_ears, 兔耳
@@ -203,13 +251,17 @@ cat_ears, 猫耳
 dog_ears, 狗耳
 mouse_ears, 老鼠耳朵
 pointy_ears, 尖耳
+
+#脸
+no_nose, 没鼻子的
+fangs, 尖牙
+tongue, 舌头
+saliva, 唾液
 armpit, 腋
+facial_hair, 男性脸部胡须
+
+#胸部
 collarbone, 锁骨
-wings, 翅膀/翼
-bat_wings, 蝙蝠翅膀
-butterfly_wings, 蝴蝶翅膀
-black_wings, 黑色之翼
-demon_wings, 恶魔之翼
 muscle, 肌肉
 chest, 胸肌
 breasts, 胸部
@@ -219,6 +271,15 @@ medium_breasts, 中等胸部(C
 large_breasts, 大胸部(D
 huge_breasts, 巨乳(E
 gigantic_breasts, 魔乳(F
+
+#翅膀
+wings, 翅膀/翼
+bat_wings, 蝙蝠翅膀
+butterfly_wings, 蝴蝶翅膀
+black_wings, 黑色之翼
+demon_wings, 恶魔之翼
+
+#身体/腿
 midriff, 腹部
 navel, 肚脐
 hips, 臀部
@@ -229,9 +290,11 @@ thick_thighs, 粗腿
 kneepits, 膝盖内侧
 foot, 脚
 toes, 脚趾
-horns, 兽角
 tan_lines, 晒日线
-facial_hair, 男性脸部胡须
+curvy, 魔鬼身材
+skinny, 骨感
+plump, 肥胖
+pregnant, 怀孕
 
 #人物姿势动作状态
 v, 胜利手势
@@ -292,11 +355,7 @@ symmetrical_hand_pose, 手对手
 eye_contact, 眼对眼（对视）
 hug, 拥抱
 lap_pillow, 膝枕
-curvy, 魔鬼身材
-skinny, 骨感
 sleeping, 睡觉
-plump, 肥胖
-pregnant, 怀孕
 bathing, 洗澡
 wet, 湿身
 sweat, 流汗
@@ -340,7 +399,8 @@ striped, 横条花纹的
 polka_dot, 点装花纹的
 frills, 皱边的
 
-#服装类物品
+#头饰
+horns, 兽角
 halo, 头顶光环
 tokin_hat, 东金帽子
 mini_top_hat, 迷你礼帽
@@ -358,6 +418,8 @@ bowtie, 蝴蝶结
 hair_bow, 蝴蝶结发饰
 maid_headdress, 女仆头饰
 bow, 服装饰品/头部饰品
+
+#装饰类物品
 lace, 花边
 ribbon, 丝带
 bandage, 绷带
@@ -391,6 +453,8 @@ shackles, 手链/手铐
 handcuffs, 手铐
 bracelet, 手镯
 cane, 手杖
+
+#服装
 torn_clothes, 破烂衣服
 see-through, 透明装
 santa, 圣诞装
@@ -409,10 +473,13 @@ midriff, 露腰上衣
 pajamas, 睡衣
 babydoll, 透明睡衣
 hoodie, 卫衣
+hooded cardigan, 连帽开衫
+hooded jacket, 连帽外套
 japanese_clothes, 和服
 yukata, 浴衣
 chinese_clothes, 唐装
 chinadress, 旗袍
+beach_shorts, 沙滩裤
 bikini, 比基尼
 side-tie_bikini, 系带式比基尼
 serafuku, 水手服
@@ -457,6 +524,8 @@ fundoshi, 日式丁字裤
 condom, 套套
 butt_plug, 添加的尾巴
 diaper, 尿布
+
+#鞋袜
 garter_straps, 袜带
 garters, 吊带袜
 garter_belt, 连腰吊带袜
@@ -488,9 +557,74 @@ slippers, 拖鞋
 boots, 靴子
 knee_boots, 马靴
 
-#和谐类
+#物品
+camera, 相机
+chopsticks, 筷子
+microphone, 麦克风
+weapons, 武器
+dagger, 匕首/短剑
+sword, 刀
+scythe, 镰刀
+whip, 鞭
+riding_crop, 马鞭
+gun, 枪
+handgun, 手枪
+wand, 魔杖
+arrow, 箭
+umbrella, 伞
+gohei, 御币
+ofuda, 札符
+yin_yang, 阴阳
+lantern, 灯笼
+lamp, 灯笼
+teacup, 茶杯
+cigarette, 香烟
+cake, 蛋糕
+taiyaki, 鲷鱼烧
+wine, 葡萄酒
+cream, 奶油
+ice_cream, 冰激凌
+sake, 日本酒
+guitar, 吉他
+piano, 钢琴
+obento, 便当
+chair, 椅子
+mimikaki, 掏耳勺
+
+#背景
+building, 建筑
+ruins, 废墟/遗迹
+cherry_blossoms, 樱花
+flower_petals, 花瓣
+nature, 自然
+torii, 鸟居
+forest, 森林/树
+river, 河流
+ocean, 大海
+beach, 沙滩
+sunset, 落日
+starry sky, 星空
+outdoors, 户外
+indoors, 室内
+onsen, 温泉
+lake, 湖泊
+mountain, 山脉
+full_moon, 满月
+pentagram, 五角星
+magic_circle, 魔法阵
+valentine, 情人节
+halloween, 万圣节
+christmas, 圣诞节
+landscape, 风景
+scenery, 风景
+cityscape, 城市风景
+science_fiction, 科技幻想
+greco-roman architecture, 西罗马建筑
+gothic architecture, 哥特式建筑
+east asian architecture, 东亚建筑
+
+#R-18 1
 69, 69式
-tentacle, 触手
 hairjob, 发交
 oral, 口交
 fellatio, 口交
@@ -504,9 +638,29 @@ cleave_gag, 用布勒住嘴
 panty_gag, 用内裤塞口
 tapegag, 胶带封口
 facial, 颜射
-leash, 宠物链
 handjob, 用手做
-groping, 摸索
+thigh_sex, 腿交
+footjob, 足交
+clothed_masturbation, 隔着衣服自慰
+masturbation, 自慰
+female_ejaculation, 潮吹
+grinding, 性器摩擦
+sex, 性爱
+clothed_sex, 穿着衣服做爱
+happy_sex, 快乐做爱
+underwater_sex, 水中做爱
+spitroast, 前后夹攻
+cock_in_thighhigh, 插在过膝袜里
+doggystyle, 狗爬式
+leg_lock, 跨坐式
+upright_straddle, 跨坐式
+missionary, 传教士体位
+girl_on_top, 女上体位
+cowgirl_position, 女上正骑
+reverse_cowgirl, 女上反骑
+virgin, 处女/破瓜
+
+#R-8 2
 areolae, 乳晕
 nipples, 乳头
 puffy_nipples, 大乳头
@@ -523,14 +677,15 @@ breast_feeding, 喂奶(小)
 paizuri, 乳交
 multiple_paizuri, 多P乳交
 breast_smother, 把头塞入胸
+
+#R-18 3
+tentacle, 触手
+leash, 宠物链
+groping, 摸索
 piercing, 穿孔
 navel_piercing, 肚脐穿孔
-thigh_sex, 腿交
-footjob, 足交
 mound_of_venus, 腹部三角带
 wide_hips, 宽盆骨
-masturbation, 自慰
-clothed_masturbation, 隔着衣服自慰
 penis, 阳具/屌
 testicles, 睾丸/蛋蛋
 ejaculation, 射出
@@ -549,12 +704,12 @@ clitoris, 阴蒂
 fat_mons, 肥逼
 cameltoe, 骆驼脚趾逼（俗称馒头逼）
 pussy_juice, 爱液
-female_ejaculation, 潮吹
-grinding, 性器摩擦
 crotch_rub, 胯部摩擦
 facesitting, 坐在脸上
 cervix, 子宫口
 cunnilingus, 舔阴
+
+#R-18 4
 insertion, 插入物
 anal_insertion, 菊花插入物
 fruit_insertion, 用水果蔬菜
@@ -585,6 +740,8 @@ x-ray, 透视人体内部
 cross-section, 透视人体内部
 internal_cumshot, 透视人体内部
 wakamezake, 酒倒在阴部
+
+#R-18 5
 public, 公共场所
 humiliation, 羞耻play
 bra_lift, 胸罩拉到胸上方
@@ -611,20 +768,6 @@ voyeurism, 窥阴癖
 exhibitionism, 裸露癖
 rape, 强暴
 about_to_be_raped, 将要被强暴
-sex, 性爱
-clothed_sex, 穿着衣服做爱
-happy_sex, 快乐做爱
-underwater_sex, 水中做爱
-spitroast, 前后夹攻
-cock_in_thighhigh, 插在过膝袜里
-doggystyle, 狗爬式
-leg_lock, 跨坐式
-upright_straddle, 跨坐式
-missionary, 传教士体位
-girl_on_top, 女上体位
-cowgirl_position, 女上正骑
-reverse_cowgirl, 女上反骑
-virgin, 处女/破瓜
 slave, 奴隶
 shibari, 捆绑
 bondage, 捆绑/奴役
@@ -659,52 +802,3 @@ uncensored, 未审核的/无码
 asian, 亚洲
 faceless_male, 无脸男
 blood, 血
-
-#物品和背景
-camera, 相机
-chopsticks, 筷子
-microphone, 麦克风
-weapons, 武器
-dagger, 匕首/短剑
-sword, 刀
-scythe, 镰刀
-whip, 鞭
-riding_crop, 马鞭
-gun, 枪
-handgun, 手枪
-wand, 魔杖
-arrow, 箭
-umbrella, 伞
-gohei, 御币
-ofuda, 札符
-yin_yang, 阴阳
-lantern, 灯笼
-lamp, 灯笼
-teacup, 茶杯
-cigarette, 香烟
-building, 建筑
-ruins, 废墟/遗迹
-cake, 蛋糕
-taiyaki, 鲷鱼烧
-wine, 葡萄酒
-cherry_blossoms, 樱花
-cream, 奶油
-ice_cream, 冰激凌
-sake, 日本酒
-flower_petals, 花瓣
-forest, 森林/树
-guitar, 吉他
-piano, 钢琴
-obento, 便当
-chair, 椅子
-mimikaki, 掏耳勺
-crease, 起皱
-ocean, 大海
-sunset, 落日
-full_moon, 满月
-pentagram, 五角星
-magic_circle, 魔法阵
-valentine, 情人节
-halloween, 万圣节
-christmas, 圣诞节
-
