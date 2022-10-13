@@ -76,7 +76,7 @@ class Prompt {
      * @return {string}
      */
     static toString(promptSource) {
-        const note = "// 数据使用ACMI格式化导出";
+        const note = "// 数据使用http://ai.uremy.world格式化导出";
         let str = "";
         if (promptSource.notes[0] !== note) {
             promptSource.notes.unshift(note);
