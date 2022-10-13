@@ -1,6 +1,7 @@
 // 数据使用http://ai.uremy.world格式化导出
 // 出处 https://github.com/zcyzcy88/TagTable
 // 视角与画面部分整合自https://aitag.top/
+// updated: 2022/10/13 20:26
 
 #图片质量
 highres, 高分辨率
@@ -625,7 +626,7 @@ greco-roman architecture, 西罗马建筑
 gothic architecture, 哥特式建筑
 east asian architecture, 东亚建筑
 
-#R-18 1
+#R-18-1
 69, 69式
 hairjob, 发交
 oral, 口交
@@ -662,7 +663,7 @@ cowgirl_position, 女上正骑
 reverse_cowgirl, 女上反骑
 virgin, 处女/破瓜
 
-#R-8 2
+#R-18-2
 areolae, 乳晕
 nipples, 乳头
 puffy_nipples, 大乳头
@@ -680,7 +681,7 @@ paizuri, 乳交
 multiple_paizuri, 多P乳交
 breast_smother, 把头塞入胸
 
-#R-18 3
+#R-18-3
 tentacle, 触手
 leash, 宠物链
 groping, 摸索
@@ -711,7 +712,7 @@ facesitting, 坐在脸上
 cervix, 子宫口
 cunnilingus, 舔阴
 
-#R-18 4
+#R-18-4
 insertion, 插入物
 anal_insertion, 菊花插入物
 fruit_insertion, 用水果蔬菜
@@ -743,7 +744,7 @@ cross-section, 透视人体内部
 internal_cumshot, 透视人体内部
 wakamezake, 酒倒在阴部
 
-#R-18 5
+#R-18-5
 public, 公共场所
 humiliation, 羞耻play
 bra_lift, 胸罩拉到胸上方
