@@ -1,4 +1,4 @@
-// 数据使用http://ai.uremy.world格式化导出
+// 数据使用ACMI格式化导出
 // 出处 https://github.com/zcyzcy88/TagTable
 
 #图片属性
@@ -102,9 +102,10 @@ no_humans, 非人
 solo, 单人
 sisters, 姐妹
 siblings, 兄弟姐妹
-1girl, 1个女人/男人
-boys, 2个女人/男人
-2girls, 2个女人/男人
+1girl, 1个女人
+2girls, 2个女人
+1boy, 1个男人
+2boys, 2个男人
 
 #人物表情
 makeup, 浓装
@@ -149,7 +150,8 @@ fucked_silly, 做爱时很痴的表情
 naughty_face, 下流的表情
 endured_face, 忍耐的表情
 looking_at_viewer, 看着你
-人物形态, 人物形态
+
+#人物形态
 ahoge, 呆毛
 bangs, 刘海
 blunt_bangs, 齐刘海
@@ -705,3 +707,4 @@ magic_circle, 魔法阵
 valentine, 情人节
 halloween, 万圣节
 christmas, 圣诞节
+
