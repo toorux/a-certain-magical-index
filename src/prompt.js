@@ -1,7 +1,7 @@
 /**
  * @typedef {{desc: string, uniqueId: (string|null), category: string, key: string}} PromptItem
- * @typedef {{[p: string]: {[p: string]: PromptItem}}} PromptItemData
- * @typedef {{notes: string[], data: PromptItemData, categoryList: string[]}} PromptSource
+ * @typedef {{[category: string]: {[key: string]: PromptItem}}} PromptItemData
+ * @typedef {{notes: string[], data: PromptItemData, categoryList: string[], noCategoryData: {[key: string]: PromptItem}}} PromptSource
  */
 
 class Prompt {
@@ -15,8 +15,10 @@ class Prompt {
         /** @type {string[]} */
         const words = str.trim().replace(/，/g, ",").split(/[\r\n]+/);
         let currCategory = "无分类";
-        /** @type {{[category: string]: {[key: string]: {desc: string, uniqueId: string | null, category: string, key: string}}}} */
+        /** @type {PromptItemData} */
         const data = {};
+        /** @type {[key: string]: PromptItem} */
+        const noCategoryData = {};
         const categoryList = [];
         const notes = [];
         for (const word of words) {
@@ -41,7 +43,7 @@ class Prompt {
             if (!word) {
                 continue;
             }
-            const item = word.replace(/([a-z0-9A-Z]) ([a-z0-9A-Z])/g, "$1^$2").split(/[,\s]+/);
+            const item = word.replace(/([a-z0-9A-Z]) ([a-z0-9A-Z])/g, "$1^$2").split(/\s*,\s*/);
             if (item.length <= 0 || !item[0]) {
                 continue;
             }
@@ -50,12 +52,29 @@ class Prompt {
             const desc = item[1] || null;
             const uniqueId = item[2] || null;
             for (const key of keys) {
-                data[currCategory][key] = {
+                const tmp = {
                     key,
                     desc: desc || key,
                     uniqueId,
                     category: currCategory,
+                };
+                if (noCategoryData[key]) {
+                    // 如果key已存在， 则从原本的分类中删除， 添加到当前分类中，如果使用desc使用 * 结尾，则以带*结尾的优先， 多个带*的结尾时，以最后一个为准
+                    const oldCategory = noCategoryData[key].category;
+                    const oldDesc = noCategoryData[key].desc;
+                    if (!desc) {
+                        tmp.desc = oldDesc;
+                    }
+                    if (oldDesc.endsWith("*") && !desc.endsWith("*")) {
+                        continue;
+                    }
+                    delete data[oldCategory][key];
+                } else {
+                    noCategoryData[key] = tmp
                 }
+                data[currCategory][key] = tmp
+
+
             }
 
         }
@@ -64,7 +83,8 @@ class Prompt {
         return {
             notes,
             categoryList,
-            data
+            data,
+            noCategoryData,
         }
 
     }
@@ -78,10 +98,15 @@ class Prompt {
     static toString(promptSource) {
         const note = "// 数据使用http://ai.uremy.world格式化导出";
         let str = "";
-        if (promptSource.notes[0] !== note) {
-            promptSource.notes.unshift(note);
+        const notes = [];
+        const notesUniqueHash = {};
+        for (const str of promptSource.notes) {
+            if (str !== note) {
+                notesUniqueHash[str] = 1;
+            }
         }
-        str += promptSource.notes.join("\n") + "\n\n";
+        notes.push(note, ...Object.keys(notesUniqueHash));
+        str += notes.join("\n") + "\n\n";
 
         for (const category of promptSource.categoryList) {
             str += `#${category}\n`
