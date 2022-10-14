@@ -1,6 +1,8 @@
 // 数据使用http://ai.uremy.world格式化导出
 // 出处 https://github.com/zcyzcy88/TagTable
 // 视角与画面部分整合自https://aitag.top/
+// 在多个分类中如果存在重复的tag, 解析后会将该tag归类到最后一次出现的分类中
+// 如果想要强制某个tag出现在特定分类下, 可以在最后加上*号
 // updated: 2022/10/13 20:26
 
 #图片质量
@@ -188,6 +190,32 @@ naughty_face, 下流的表情
 endured_face, 忍耐的表情
 looking_at_viewer, 看着你
 
+#颜色
+black, 黑色
+white, 白色
+red, 红色
+blue, 蓝色
+green, 绿色
+pink, 粉色
+yellow, 黄色
+purple, 紫色
+orange, 橙色
+brown, 棕色
+gray, 灰色
+ching, 青色
+
+#脸
+eyes, 眼睛
+nose, 鼻子
+mouth, 嘴巴
+hair, 头发
+no_nose, 没鼻子的
+fangs, 尖牙
+tongue, 舌头
+saliva, 唾液
+armpit, 腋
+facial_hair, 男性脸部胡须
+
 #发型
 ahoge, 呆毛
 bangs, 刘海
@@ -254,14 +282,6 @@ cat_ears, 猫耳
 dog_ears, 狗耳
 mouse_ears, 老鼠耳朵
 pointy_ears, 尖耳
-
-#脸
-no_nose, 没鼻子的
-fangs, 尖牙
-tongue, 舌头
-saliva, 唾液
-armpit, 腋
-facial_hair, 男性脸部胡须
 
 #胸部
 collarbone, 锁骨
